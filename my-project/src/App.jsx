@@ -7,13 +7,7 @@ import { Navigate } from "react-router-dom";
 export default function App (){
 
   return(
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="*" element={<LandingPage/>} />
-        <Route path="/contact" element={<Contact/>} />
-      </Routes>
-    </BrowserRouter>
+    <LandingPage/>
   )
 }
 
