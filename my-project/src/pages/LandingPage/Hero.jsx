@@ -23,8 +23,8 @@ const Hero = () => {
                     </h1>
 
                     {/* Subheading */}
-                    <div className="md:w-1/2 drop-shadow-md text-blue-400 w-full text-sm md:text-base">
-                        <h2>
+                    <div className="md:w-1/2 drop-shadow-md text-neutral-400 w-full text-sm md:text-base">
+                        <h2 className="italic">
                             If a single line of code has the power to change the world,
                             what do you think a group of young coders could do?
                         </h2>

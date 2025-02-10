@@ -2,38 +2,34 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="w-full min-h-screen flex p-16">
-      <div className="w-full h-full flex flex-col md:flex-row items-center">
-        {/* Image Container with Animation */}
+    <>
+    <div className="absolute w-full h-screen justify-end -z-10">
+                <div className="-z-10">
+                    <img
+                        className="-z-10 -scale-x-100 absolute object-cover w-full h-full"
+                        src="/public/media/image copy 2.png"
+                        alt="Background"
+                    />
+                </div>
+      </div>
+      <div className="flex justify-end">
         <motion.div
-          className="rounded-2xl overflow-hidden w-96 shadow-md"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+        className="md:w-1/2 w-full flex flex-col h-screen rounded-l-3xl bg-blue-500 bg-opacity-90 text-white p-6 gap-12"
         >
-          <img src="/public/media/image.png" alt="About Us" className="w-full h-full object-cover" />
-        </motion.div>
+          <div className="w-full text-6xl justify-center p-4 flex font-thin">
+            <h1 className="italic">
+              What is <span className="font-black">BYTE?</span>
+            </h1>
+          </div>
+          <div className="w-full h-full font-thin text-lg">
+            <p>BYTE Ventures is a youth-focused tech initiative dedicated to empowering the next generation of innovators through hands-on learning. We provide engaging workshops in game development, 3D design, robotics, and AI, helping kids explore technology in a fun and interactive way. Our mission is to bridge the gap between creativity and coding, fostering problem-solving skills and curiosity in young minds. Whether designing their first video game or building AI-powered projects, BYTE Ventures equips students with the tools to turn their ideas into reality.</p>
 
-        {/* Text Container with Animation */}
-        <motion.div
-          className="w-full mt-8 md:mt-0 md:ml-8"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <h1 className="text-4xl font-bold mb-4">What Is BYTE?</h1>
-          <p className="text-lg text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            scelerisque leo eget nisi tincidunt, eget aliquet nunc tincidunt.
-            Integer tincidunt, nunc eget aliquet tincidunt, nunc nisl aliquet
-            nunc, eget aliquet nunc nisl eget nunc. Nullam scelerisque leo eget
-            nisi tincidunt, eget aliquet nunc tincidunt.
-          </p>
+          </div>
+
         </motion.div>
       </div>
-    </div>
+    
+      </>
   );
 };
 
